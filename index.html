@@ -100,9 +100,36 @@
         </div>
       </section>
 
-      <section class="search-form">
+      <section class="search-hotel">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+
+        <button class="button button-search">Поиск гостиницы в Седоне</button>
+        <form class="search-hotel-form" action="https://echo.htmlacademy.ru" method="get">
+          <p class="search-form-arrival">
+            <label> Дата заезда:
+              <input class="search-text-input" type="text" placeholder="24 апреля 2017">
+            </label>
+            <button class="calendar-icon" type="button"></button>
+          </p>
+          <p class="search-form-departure">
+            <label> Дата выезда:
+              <input class="search-text-input" type="text" placeholder="4 июля 2017">
+            </label>
+            <button class="calendar-icon" type="button"></button>
+          </p>
+          <p class="search-form-adults">
+            <label> Взрослые:
+              <input class="search-number-input" type="number" value="2" min="1" max="9">
+            </label>
+          </p>
+          <p class="search-form-children">
+            <label> Дети:
+              <input class="search-number-input" type="number" value="0" min="0" max="9">
+            </label>
+          </p>
+          <button class="button button-search" type="submit">Найти</button>
+        </form>
       </section>
 
       <section class="map">
