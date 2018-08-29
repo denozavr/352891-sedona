@@ -24,6 +24,61 @@
       <h1 class="visually-hidden">Отели Седоны</h1>
 
       <!-- form -->
+      <section class="hotel-filters">
+        <h2 class="visually-hidden">Параметры фильтрации отелей</h2>
+        <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="filter-infrastructure">
+            <legend class="filter-legend">Инфраструктура:</legend>
+            <ul class="infrastructure-list">
+              <li>
+                <label>
+                  <input class="filter-checbox" type="checkbox" name="pool" value="pool" checked>Бассейн
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="filter-checbox" type="checkbox" name="parking" value="parking">Парковка
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="filter-checbox" type="checkbox" name="wi-fi" value="wi-fi">Wi-Fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-hotel-type">
+            <legend class="filter-legend">Тип жилья:</legend>
+            <ul class="infrastructure-list">
+              <li>
+                <label>
+                  <input class="filter-checbox" type="checkbox" name="pool" value="pool" checked>Гостиница
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="filter-checbox" type="checkbox" name="parking" value="parking">Мотель
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="filter-checbox" type="checkbox" name="wi-fi" value="wi-fi">Аппартаменты
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-price">
+            <legend class="filter-legend">Стоимость в сутки (Р):</legend>
+            <div class="filter-price-controls">
+              <div class="range-prices">
+                <!-- NOT SURE -- input OR p with spans -->
+              </div>
+              <div class="range-control"></div>
+              <button class="button button-filter" type="submit">Показать</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
 
       <section class="sorting">
         <h2 class="visually-hidden">Виды сортировок</h2>
