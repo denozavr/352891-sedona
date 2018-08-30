@@ -105,28 +105,32 @@
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
 
         <button class="button button-search">Поиск гостиницы в Седоне</button>
-        <form class="search-hotel-form" action="https://echo.htmlacademy.ru" method="get">
+        <form class="search-hotel-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="search-form-arrival">
             <label> Дата заезда:
-              <input class="search-text-input" type="text" placeholder="24 апреля 2017">
+              <input class="search-text-input" type="text" name="arrival-date" placeholder="24 апреля 2017">
             </label>
-            <button class="calendar-icon" type="button"></button>
+            <button class="calendar-icon" type="button" aria-label="Открыть календарь"></button>
           </p>
           <p class="search-form-departure">
             <label> Дата выезда:
-              <input class="search-text-input" type="text" placeholder="4 июля 2017">
+              <input class="search-text-input" type="text" name="departure-date" placeholder="4 июля 2017">
             </label>
-            <button class="calendar-icon" type="button"></button>
+            <button class="calendar-icon" type="button" aria-label="Открыть календарь"></button>
           </p>
           <p class="search-form-adults">
-            <label> Взрослые:
-              <input class="search-number-input" type="number" value="2" min="1" max="9">
-            </label>
+            <!-- change label from inner input to for pattern, because by specification is forbidden to put <button> inside label -->
+            <label for="number-adults"> Взрослые:</label>
+            <button class="button-minus minus-adult" type="button" aria-label="Уменьшить количество взрослых">&minus;</button>
+            <input class="search-number-input" id="number-adults" type="number" name="adults-count" value="2" min="1" max="9">
+            <button class="button-plus plus-adult" type="button" aria-label="Увеличить количество взрослых">&plus;</button>
           </p>
           <p class="search-form-children">
-            <label> Дети:
-              <input class="search-number-input" type="number" value="0" min="0" max="9">
-            </label>
+            <!-- change label from inner input to for pattern, because by specification is forbidden to put <button> inside label -->
+            <label for="number-children"> Дети:</label>
+            <button class="button-minus minus-children" type="button" aria-label="Уменьшить количество детей">&minus;</button>
+            <input class="search-number-input" id="number-children" type="number" name="children-count"  value="0" min="0" max="9">
+            <button class="button-plus plus-children" type="button" aria-label="Увеличить количество детей">&plus;</button>
           </p>
           <button class="button button-search" type="submit">Найти</button>
         </form>
@@ -146,15 +150,16 @@
 
       <div class="footer-social">
         <ul>
-          <li><a class="social-button social-button-twit" href="#">Twitter</a></li>
-          <li><a class="social-button social-button-fb" href="#">Facebook</a></li>
-          <li><a class="social-button social-button-youtube" href="#">YouTube</a></li>
+          <li><a class="social-button social-button-twit" href="#"><span class="visually-hidden">Twitter</span></a></li>
+          <li><a class="social-button social-button-fb" href="#"><span class="visually-hidden">Facebook</span></a></li>
+          <li><a class="social-button social-button-youtube" href="#"><span class="visually-hidden">YouTube</span></a></li>
         </ul>
       </div>
 
       <p class="footer-copyright">
         <span>website by</span>
         <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
+          <span class="visually-hidden">Html Academy</span>
           <img src="img/Svg/logo-htmlacademy.svg" width="115" height="41" alt="Html Academy Logo"></a>
       </p>
     </footer>
