@@ -1,0 +1,240 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+  padding: 0;
+
+
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+}
+/* responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  border: none;
+}
+
+.button-search,
+.social-button,
+.button-more {
+  background-color: #81b3d2;
+}
+
+.button-search:hover,
+.social-button:hover,
+.button-more:hover {
+  background-color: #669ec0;
+}
+
+.button-search:active,
+.social-button:active,
+.button-more:active {
+  background-color: #5496bd;
+}
+
+.button-show-form,
+.button-book {
+  background-color: #766357;
+}
+
+.button-show-form:hover,
+.button-book:hover {
+  background-color: #604e43;
+}
+
+.button-show-form:active,
+.button-book:active {
+  background-color: #503e33;
+}
+
+
+/* accessability */
+.visually-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+
+.container {
+  max-width: 1200px;
+  min-width: 768px;
+  margin: 0 auto;
+
+  background-color: #ffffff;
+}
+
+.main-navigation {
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.site-navigation-list {
+  margin: 0;
+  list-style: none;
+}
+
+.site-navigation-item a {
+  color: #000000;
+}
+
+.site-navigation-item a:hover,
+.site-navigation-item a:focus {
+  color: #81b3d2;
+}
+
+.site-navigation-item a:active {
+  color: #b2b2b2;
+}
+
+
+.hero-image {
+  position: relative;
+  min-height: 508px;
+}
+
+.lead-lines {
+  line-height: 26px;
+}
+
+.lead-main {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+
+.features-general-list,
+.features-ordered-list {
+  list-style: none;
+  text-align: center;
+}
+
+.features h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.feature-with-image {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.features-ordered-list {
+  background-color: #eeeeee;
+}
+
+.search-hotel h2 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.search-hotel-promo {
+  line-height: 24px;
+}
+
+.button-show-form,
+.button-search {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.search-hotel-form input,
+.search-hotel-form label {
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.search-hotel-form input {
+  font: inherit;
+
+  background-color: #f2f2f2;
+  border: none
+}
+
+.search-hotel-form input:hover {
+  background-color: #ebebeb;
+}
+
+.search-hotel-form input:focus {
+  background-color: #ffffff;
+}
+
+.main-footer {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* TODO: later use flexbox */
+.footer-hashtag,
+.footer-social,
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.footer-hashtag a {
+  color: #000000;
+}
+
+.footer-hashtag a:hover,
+.footer-hashtag a:focus {
+  color: #81b3d2;
+}
+
+.footer-hashtag a:active {
+  color: #b2b2b2;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  display: inline-block;
+  width: 48px;
+  height: 46px;
+  margin-left: 6px;
+  background-color: #81b3d2;
+
+  vertical-align: top;
+}
+
+.footer-copyright {
+  line-height: 26px;
+}
