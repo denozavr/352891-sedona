@@ -91,6 +91,7 @@ img {
   margin: 0 auto;
 
   background-color: #ffffff;
+  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 .main-navigation {
@@ -237,4 +238,91 @@ img {
 
 .footer-copyright {
   line-height: 26px;
+}
+
+/* Catalog */
+
+.hotel-filters {
+  min-height: 217px;
+
+  color: #ffffff;
+  background-color: #5e89b0;
+  background-image: url('../img/hotels-blur-back.jpg');
+}
+
+.filters-form fieldset {
+  border: none;
+}
+
+.filter-legend {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.filters-form ul {
+  list-style: none;
+}
+
+.filter-checkbox:hover + label,
+.filter-checkbox:focus + label {
+  color: #ffffff;
+}
+
+.filter-checkbox:disabled + label {
+  color: #6a6a6a;
+}
+
+.sorting-result,
+.hotel-name {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.sorting,
+.hotel-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.sorting-options {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sortings-list,
+.hotels-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sortings-item a {
+  color: #b2b2b2;
+}
+
+.sortings-item-active a,
+.sortings-item a:hover,
+.sortings-item a:focus {
+  color: #81b3d2;
+}
+
+.sortings-item a:active {
+  color: #000000;
+}
+
+.sortings-item:not(.sortings-item-active) a:not(:active) {
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.hotel-name a {
+  color: #000000;
+}
+
+.hotel-name a:hover,
+.hotel-name a:focus {
+  color: #81b3d2;
+}
+
+.hotel-name a:active {
+  color: #b2b2b2;
 }
