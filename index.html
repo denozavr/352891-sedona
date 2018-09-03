@@ -124,20 +124,22 @@
               </label>
               <button class="calendar-icon" type="button" aria-label="Открыть календарь"></button>
             </p>
-            <p class="search-form-adults">
-              <!-- change label from inner input to for pattern, because by specification is forbidden to put <button> inside label -->
-              <label for="number-adults"> Взрослые:</label>
-              <button class="button-minus minus-adult" type="button" aria-label="Уменьшить количество взрослых">&minus;</button>
-              <input class="search-number-input" id="number-adults" type="number" name="adults-count" value="2" min="1" max="9">
-              <button class="button-plus plus-adult" type="button" aria-label="Увеличить количество взрослых">&plus;</button>
-            </p>
-            <p class="search-form-children">
-              <!-- change label from inner input to for pattern, because by specification is forbidden to put <button> inside label -->
-              <label for="number-children"> Дети:</label>
-              <button class="button-minus minus-children" type="button" aria-label="Уменьшить количество детей">&minus;</button>
-              <input class="search-number-input" id="number-children" type="number" name="children-count"  value="0" min="0" max="9">
-              <button class="button-plus plus-children" type="button" aria-label="Увеличить количество детей">&plus;</button>
-            </p>
+            <div class="search-form-numbers">
+              <p class="search-form-adults">
+                <!-- change label from inner input to for pattern, because by specification is forbidden to put <button> inside label -->
+                <label for="number-adults"> Взрослые:</label>
+                <button class="button-minus minus-adult" type="button" aria-label="Уменьшить количество взрослых">&minus;</button>
+                <input class="search-number-input" id="number-adults" type="number" name="adults-count" value="2" min="1" max="9">
+                <button class="button-plus plus-adult" type="button" aria-label="Увеличить количество взрослых">&plus;</button>
+              </p>
+              <p class="search-form-children">
+                <!-- change label from inner input to for pattern, because by specification is forbidden to put <button> inside label -->
+                <label for="number-children"> Дети:</label>
+                <button class="button-minus minus-children" type="button" aria-label="Уменьшить количество детей">&minus;</button>
+                <input class="search-number-input" id="number-children" type="number" name="children-count"  value="0" min="0" max="9">
+                <button class="button-plus plus-children" type="button" aria-label="Увеличить количество детей">&plus;</button>
+              </p>
+            </div>
             <button class="button button-search" type="submit">Найти</button>
           </form>
         </section>
