@@ -19,7 +19,7 @@
             <li class="site-navigation-item"><a href="info.html">Информация</a></li>
             <li class="site-navigation-item"><a href="foto.html">Фото и Видео</a></li>
             <li class="site-navigation-item"><a href="map.html">Карта штата</a></li>
-            <li class="site-navigation-item"><a href="#">Гостиницы</a></li>
+            <li class="site-navigation-item"><a class="current-page" href="#">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
@@ -43,7 +43,7 @@
                   <label for="filter-parking">Парковка</label>
                 </li>
                 <li>
-                  <input class="filter-checkbox visually-hidden" id="filter-wifi" type="checkbox" name="wi-fi" value="wi-fi" disabled>
+                  <input class="filter-checkbox visually-hidden" id="filter-wifi" type="checkbox" name="wi-fi" value="wi-fi">
                   <label for="filter-wifi">Wi-Fi</label>
                 </li>
               </ul>
@@ -97,8 +97,12 @@
             </ul>
           </div>
           <div class="sorting-arrows">
-              <a class="sorting-up" href="#"><span class="visually-hidden">по возрастанию</span></a>
-              <a class="sorting-down active" href="#"><span class="visually-hidden">по убыванию</span></a>
+              <a class="sort-arrow-item sorting-up" href="#"><span class="visually-hidden">сортировка по возрастанию</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#cacaca" d="M5.5 0L0 10h11z"/></svg>
+              </a>
+              <a class="sort-arrow-item sorting-down active" href="#"><span class="visually-hidden">сортировка по убыванию</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#cacaca" d="M5.5 10L0 0h11"/></svg>
+              </a>
           </div>
         </section>
 
