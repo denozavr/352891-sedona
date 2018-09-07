@@ -47,8 +47,11 @@ img {
 }
 
 .button-search:hover,
+.button-search:focus,
 .social-button:hover,
-.button-more:hover {
+.social-button:focus,
+.button-more:hover,
+.button-more:focus {
   background-color: #669ec0;
 }
 
@@ -65,7 +68,9 @@ img {
 }
 
 .button-show-form:hover,
-.button-book:hover {
+.button-show-form:focus,
+.button-book:hover,
+.button-book:focus {
   background-color: #604e43;
 }
 
@@ -77,13 +82,22 @@ img {
 
 
 /* accessability */
-.visually-hidden {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
-  white-space: nowrap;
+
   width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 
@@ -115,7 +129,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 56px;
+  flex-wrap: wrap;
+  min-height: 56px;
   margin: 0;
   padding: 0 6%;
 
@@ -273,10 +288,6 @@ img {
     transform: translate(-50%, -50%);
 }
 
-.features-general {
-  /* height: 331px; */
-}
-
 .feature-general-item::before {
   content: '';
   position: absolute;
@@ -399,6 +410,7 @@ img {
 }
 
 .search-hotel-form input:focus {
+  outline: 2px solid #ebebeb;
   background-color: #ffffff;
 }
 
@@ -572,6 +584,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   height: 71px;
   margin: 0;
   padding: 0;
@@ -857,10 +870,6 @@ img {
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
   box-sizing: content-box;
-}
-
-.range-toggle:hover {
-  background: #1c4f80;
 }
 
 .range-toggle:hover,
