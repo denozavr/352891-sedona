@@ -322,7 +322,7 @@ input[type="radio"].visually-hidden {
   padding: 140px 0 81px 0; /*was 73px*/
 }
 .feature-general-item p {
-  width: 290px;
+  max-width: 290px;
   margin: 25px auto 0;
 }
 
@@ -345,7 +345,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-ordered-item  p:not(.feature-number) {
-  width: 270px;
+  max-width: 270px;
   margin: 0 auto;
 }
 
