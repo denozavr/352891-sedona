@@ -704,6 +704,7 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   background-color: #5e89b0;
   background-image: url('../img/hotels-blur-back.jpg');
+  background-position: 0 -54px;
 }
 
 .filters-form {
