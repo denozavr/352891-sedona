@@ -199,7 +199,7 @@ input[type="radio"].visually-hidden {
   right: 0;
   bottom: 0;
   left: 0;
-  background: url('../img/Svg/polygon.svg');
+  background: url('../img/svg-icons/polygon.svg');
   background-repeat: no-repeat;
   background-position: bottom center;
 }
@@ -329,18 +329,18 @@ _:-ms-fullscreen, :root .hero-image-section::after {
 }
 
 .feature-general-item:nth-child(1)::before {
-  background-image: url(../img/Svg/icon-1.svg);
+  background-image: url(../img/svg-icons/icon-1.svg);
 }
 
 .feature-general-item:nth-child(2)::before {
-  background-image: url(../img/Svg/icon-3.svg);
+  background-image: url(../img/svg-icons/icon-3.svg);
 }
 
 .feature-general-item:nth-child(3)::before {
   top: 57px;
   width: 61px;
   height: 77px;
-  background-image: url(../img/Svg/icon-2.svg);
+  background-image: url(../img/svg-icons/icon-2.svg);
 }
 
 
@@ -687,7 +687,7 @@ input[type="number"]:focus {
   left: 16px;
   width: 17px;
   height: 15px;
-  background-image: url('../img/svg/twitter.svg');
+  background-image: url('../img/svg-icons/twitter.svg');
 }
 
 .social-button-fb::before {
@@ -695,7 +695,7 @@ input[type="number"]:focus {
   left: 17px;
   width: 17px;
   height: 22px;
-  background-image: url('../img/svg/fb-icon.svg');
+  background-image: url('../img/svg-icons/fb-icon.svg');
 }
 
 .social-button-youtube::before {
@@ -703,7 +703,7 @@ input[type="number"]:focus {
   left: 14px;
   width: 20px;
   height: 17px;
-  background-image: url('../img/svg/youtube.svg');
+  background-image: url('../img/svg-icons/youtube.svg');
 }
 
 .social-button:hover,
@@ -801,20 +801,20 @@ input[type="number"]:focus {
   top: -2px;
   width: 25px;
   height: 23px;
-	background-image: url('../img/svg/checkbox-off.svg');
+	background-image: url('../img/svg-icons/checkbox-off.svg');
 	background-repeat: no-repeat;
 }
 
 .filter-checkbox:checked + label::before {
-	background-image: url('../img/svg/checkbox-on.svg');
+	background-image: url('../img/svg-icons/checkbox-on.svg');
 }
 
 .filter-checkbox:checked:disabled + label::before {
-	background-image: url('../img/svg/checkbox-on-disabled.svg');
+	background-image: url('../img/svg-icons/checkbox-on-disabled.svg');
 }
 
 .filter-checkbox:disabled + label::before {
-	background-image: url('../img/svg/checkbox-off-disabled.svg');
+	background-image: url('../img/svg-icons/checkbox-off-disabled.svg');
 }
 
 
@@ -1161,7 +1161,7 @@ input[type="number"]:focus {
   margin: 0;
   margin-top: -1px;
   margin-right: -2px;
-  background-image: url('../img/svg/star.svg');
+  background-image: url('../img/svg-icons/star.svg');
   background-repeat: repeat no-repeat;
   background-position: right center;
   background-size: 24px 20px;
