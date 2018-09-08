@@ -381,6 +381,14 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
 }
 
+.modal-form-show {
+	display: block;
+	animation: slideDown 1s ease;
+}
+.modal-form-hide {
+	display: none;
+}
+
 .search-hotel-form {
   position: absolute;
   left: 50%;
@@ -738,8 +746,7 @@ input[type="radio"].visually-hidden {
 
 
 .filter-checkbox:focus + label::before {
-	outline: thin dotted;
-	outline: 5px auto green;
+  outline: 3px solid #81b3d2;
 }
 
 .hotel-type-list label {
