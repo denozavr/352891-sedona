@@ -235,6 +235,7 @@ input[type="radio"].visually-hidden {
 }
 
 .features h3 {
+  margin: 21px 30px;
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
@@ -245,6 +246,7 @@ input[type="radio"].visually-hidden {
 .features-ordered-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin: 0;
  }
 
@@ -326,7 +328,6 @@ input[type="radio"].visually-hidden {
 
 
 .features-ordered {
-  /* height: 256px; */
   background-color: #eeeeee;
 }
 
@@ -463,6 +464,7 @@ input[type="radio"].visually-hidden {
 
 .search-form-numbers {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .search-form-numbers input[type="number"] {
@@ -538,27 +540,24 @@ input[type="radio"].visually-hidden {
 
 .button-search {
   width: 458px;
-  height: 58px;
+  min-height: 58px;
   margin-top: 39px;
 }
 
 
 .section-map {
  position: relative;
- height: 473px;
+ min-height: 473px;
  overflow: visible;
 }
 
 .main-footer {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   z-index: 1;
   padding: 25px 0;
   background-color: rgba(254, 254, 254, 0.9);
-}
-
-.main-footer {
-  display: flex;
 }
 
 /* TODO: later use flexbox */
@@ -693,11 +692,13 @@ input[type="radio"].visually-hidden {
 
 .filters-form {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 27px 6% 17px;
 }
 
 .filters-form fieldset {
+  max-width: 25%;
   padding: 0;
   border: none;
 }
@@ -916,6 +917,7 @@ input[type="radio"].visually-hidden {
 
 .sorting-result,
 .hotel-name {
+  max-width: 300px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -925,12 +927,12 @@ input[type="radio"].visually-hidden {
 .sorting,
 .hotel-item {
   display: flex;
+  flex-wrap: wrap;
   padding: 0 6%;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .sorting {
-  /* height: 86px; */
   padding: 9px 6%;
   align-items: center;
 }
@@ -942,6 +944,8 @@ input[type="radio"].visually-hidden {
 
 .sorting-options {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 40%;
   margin-top: 5px;
   font-size: 12px;
   line-height: 18px;
@@ -953,6 +957,7 @@ input[type="radio"].visually-hidden {
 
 .sortings-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 238px;
 }
@@ -983,6 +988,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-arrows {
+  max-width: 40px;
   margin-top: 4px;
   margin-left: auto;
 }
@@ -1013,7 +1019,7 @@ input[type="radio"].visually-hidden {
 .hotel-item-info {
   display: flex;
   flex-wrap: wrap;
-  width: 258px;
+  max-width: 258px;
 }
 
 .hotel-name {
