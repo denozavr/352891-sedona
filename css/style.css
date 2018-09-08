@@ -204,6 +204,13 @@ input[type="radio"].visually-hidden {
   background-position: bottom center;
 }
 
+/*fix for IE11 */
+_:-ms-fullscreen, :root .hero-image-section::after {
+  background-position: 0px 226px;
+}
+/*fix for IE11 */
+
+
 .hero-image {
   position: absolute;
   left: 50%;
@@ -497,6 +504,15 @@ input[type="radio"].visually-hidden {
 	height: 38px;
   padding-left: 14px;
   text-align: center;
+}
+
+/* Hide arrows in input[number] Firefox, but show when focused */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]:focus {
+  -moz-appearance: spinner;
 }
 
 .search-form-adults,
