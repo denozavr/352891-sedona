@@ -11,6 +11,13 @@ var amountChildren = searchForm.querySelector("#number-children");
 var isStorageSupport = true;
 var storageDateArrival = "";
 
+function hideForm() {
+  searchForm.classList.remove("modal-form-show");
+  searchForm.classList.add("modal-form-hide");
+}
+
+hideForm(); //hide form if JS was successfully loaded
+
 try {
   storageDateArrival = localStorage.getItem('dateArrival');
   var storageDateDeparture = localStorage.getItem('dateDeparture');
@@ -23,10 +30,8 @@ try {
 link.addEventListener("click", function (event) {
   event.preventDefault();
   if (searchForm.classList.contains("modal-form-show")) {
-    searchForm.classList.remove("modal-form-show");
-    searchForm.classList.add("modal-form-hide");
-  }
-  else {
+    hideForm();
+  } else {
     searchForm.classList.remove("modal-form-hide");
     searchForm.classList.add("modal-form-show");
   };
