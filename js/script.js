@@ -12,7 +12,7 @@ var isStorageSupport = true;
 var storageDateArrival = "";
 
 try {
- storageDateArrival = localStorage.getItem('dateArrival');
+  storageDateArrival = localStorage.getItem('dateArrival');
   var storageDateDeparture = localStorage.getItem('dateDeparture');
   var storageAmountAdults = localStorage.getItem('amountAdult');
   var storageAmountChildern = localStorage.getItem('amountChild');
@@ -20,21 +20,21 @@ try {
   isStorageSupport = false;
 }
 
-link.addEventListener("click",function(event){
-	event.preventDefault();
-	if(searchForm.classList.contains("modal-form-show")) {
-		searchForm.classList.remove("modal-form-show");
-		searchForm.classList.add("modal-form-hide");
-	}
-	else {
-		searchForm.classList.remove("modal-form-hide");
-		searchForm.classList.add("modal-form-show");
-	};
-	dateArrival.focus();
+link.addEventListener("click", function (event) {
+  event.preventDefault();
+  if (searchForm.classList.contains("modal-form-show")) {
+    searchForm.classList.remove("modal-form-show");
+    searchForm.classList.add("modal-form-hide");
+  }
+  else {
+    searchForm.classList.remove("modal-form-hide");
+    searchForm.classList.add("modal-form-show");
+  };
+  dateArrival.focus();
 });
 
 
-searchForm.addEventListener("submit",function(event) {
+searchForm.addEventListener("submit", function (event) {
   if (!dateArrival.value || !dateDeparture.value) {
     evt.preventDefault();
   } else {
@@ -55,6 +55,3 @@ window.addEventListener('keydown', function (evt) {
     }
   }
 });
-
-
-
